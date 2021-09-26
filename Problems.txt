@@ -1,0 +1,15 @@
+Jedynym dość kluczowym problemem jest nie przyklejająca się nawigcja według mnie i wykrywania błedów związanych z flex boxem są 2 możliwe rozwiązania :
+1. właściwość flexbox'a odpowiadająca za umiejscowienie na osi Y może wpływać na rozmiar elementów przez co mogą mieć one problem z dostosowywaniem się 
+
+2. rozdzielenie nawigacji na dwa poszczególne elementy moją propozycją było zrobić 1 nawigację która by zmieniała swój wygląd w zależności od danego arkusza styli przez szerokość.
+
+Próby : 
+1. będąc uczniem 1 z szkoły programistycznej zajmującej się frontend'em mogę śmiało powiedzieć że wina leży po stronie podzielenia naszej nawigacji oraz pomieszania go z flexboxem i chaotycznymi właściwościami określonymi w css'ie. 
+
+Plany: 
+1. Strona prawdopodobnie będzie dalej rozwijana wraz z moimi umięjetnościami przyszłe plany na stronę są następujące : 
+	-utworzenie własnej bazy danych w oparcie o node.js oraz ustabilizowanie i zooptymalizowanie strony czego nie zdążyłem zrobić ze względu 		terminy lecz prawdopodobnie w przerwie świątecznej będę dalej planował rozbudowę mojej strony wraz z oparciem działania na zasadzie java 	script'u i wysłania zgłoszeń. Jeżeli uda mi się ponaprawiać dane problemy w czasie dozwolonym na podesłanie pracy ponad programowej 			na pewno ją podeślę z racji na rzetelność w obec moich produktów 
+
+Dziękuje bardzo pozdrawiam Filip Natanek......
+
+Po konsultacjach z osobami pracującymi w tej branży problem został rozwiązany polegał on na tym że na złym elemencie był nadany position sticky oraz umieszczenie artykułów w divie

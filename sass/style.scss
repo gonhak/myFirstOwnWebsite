@@ -1,0 +1,204 @@
+*{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: blue;
+}
+
+// NAV
+
+.flex{
+    height: calc(390px + 200vh);
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background-color: transparent;    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    background-color: #999;
+    z-index: 800;
+}
+
+.nav-mobile{
+    button{
+        margin-left: 10px;
+        padding: 0px 20px;
+        font-size: 30px;
+        background: none;
+        border:none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.nav-desktop{
+    display: none;
+}
+
+// HEADER
+
+.hero-bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 71, 129, 0.4);
+    z-index: 2;
+}
+
+.header-img{
+    position: relative;
+    width: 100vw;
+    height: 330px;
+    background-image: url(../img/laptop-1571702_640.jpg);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 4;
+
+    h1{
+        text-shadow: 2px 2px 3px black;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    span{
+        color: aqua;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.about-us{
+    top: 64.5%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/office-1209640_1280.jpg);
+    z-index: 18;
+}
+
+.section-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 100px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: -3vh;
+}
+
+.section-header span{
+    color: aqua;
+}
+
+.section-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0 10vw;
+}
+
+
+.hero-color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 71, 129, 0.4);
+}
+.price{
+    top: 164.5%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/computer-2982270_1280.jpg);
+    z-index: 20;
+}
+
+.contact{
+    top: 264.5%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/laptop-3196481_1280.jpg);
+    z-index: 20;
+}
+
+.contact .icon{
+    padding: 30px 0px;
+}
+
+@media (min-width:400px) {
+    .header-text h1 {
+        font-size: 36px ;
+        margin-bottom: 10px;
+    }
+
+    .header-text p{
+        font-size:18px ;
+    }
+
+    .section-header{
+        font-size: 26px ;
+        width: 100vw;
+    }
+    
+    .contact{
+        h1{
+            font-size: 32px;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .section-text{
+      font-size: 16px;
+    }
+
+    .section-header{
+        font-size: 32px;
+        width: 100vw;
+    }
+
+    .contact{
+        h1{
+            font-size: 22px;
+        }
+    }
+}
